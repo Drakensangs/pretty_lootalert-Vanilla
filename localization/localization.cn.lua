@@ -1,0 +1,61 @@
+-- zhCN
+local _, private = ...;
+local L = private.L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "你获得了";
+L.YOU_WON_LABEL = "你获得了!";
+L.YOU_CREATED_LABEL = "你制造了：";
+L.YOU_EARNED_LABEL = "你获得了：";
+L.NEW_RECIPE_LEARNED_TITLE = "学会了新配方！";
+
+-- Options
+L.OPT_SUBTITLE = "为拾取、掷骰、金钱、配方和荣誉提供漂亮的提示。";
+L.OPT_COMMANDS = "命令";
+L.OPT_COMMANDS_HINT = "/pla - 打开此设置\n/pla test - 显示测试提示\n/pla unlock | lock - 移动提示\n/pla reset - 恢复默认设置";
+L.OPT_PAGE_DISPLAY = "显示与位置";
+L.OPT_PAGE_TOASTS = "提示、效果与品质";
+L.OPT_PAGE_ADVANCED = "高级";
+L.OPT_DISPLAY = "显示";
+L.OPT_SCALE = "缩放";
+L.OPT_MAX_ALERTS = "最大提示数";
+L.OPT_UPDATE_TIME = "更新时间";
+L.OPT_SPACING = "提示间距";
+L.OPT_POSITION = "位置";
+L.OPT_UNLOCK = "解锁框体";
+L.OPT_LOCK = "锁定框体";
+L.OPT_TEST = "显示测试提示";
+L.OPT_X = "X 位置";
+L.OPT_Y = "Y 位置";
+L.OPT_STRATA = "层级：";
+L.STRATA_BACKGROUND = "背景";
+L.STRATA_LOW = "低";
+L.STRATA_MEDIUM = "中";
+L.STRATA_HIGH = "高（默认）";
+L.STRATA_DIALOG = "对话框";
+L.STRATA_FULLSCREEN = "全屏";
+L.STRATA_FULLSCREEN_DIALOG = "全屏对话框";
+L.STRATA_TOOLTIP = "鼠标提示";
+L.OPT_SHOW_FOR = "显示提示";
+L.OPT_LOOTING = "拾取";
+L.OPT_CRAFTING = "制造";
+L.OPT_ROLLS = "赢得的掷骰";
+L.OPT_MONEY = "金钱";
+L.OPT_RECIPES = "学会的配方";
+L.OPT_EFFECTS = "效果";
+L.OPT_SOUNDS = "播放声音";
+L.OPT_ANIMS = "播放动画";
+L.OPT_QFILTER = "物品品质过滤";
+L.OPT_EVERY_QUALITY = "显示所有品质（不过滤）";
+L.OPT_MIN_LOW = "60级以下最低品质";
+L.OPT_MIN_MAX = "60级最低品质";
+L.OPT_ADV_ENABLE = "启用高级选项（覆盖主要提示设置）";
+L.OPT_ADV_NOTE = "按提示类型替换效果和品质过滤。\n提示仍需在提示页中开启。";
+L.OPT_SOUND_OVERRIDE = "覆盖播放声音的品质";
+L.OPT_SOUND_FROM = "播放声音的最低品质";
+L.OPT_QOVERRIDE = "覆盖物品品质过滤";
+L.OPT_MONEY_MIN = "显示的最低收入（0 = 全部）：";
+L.OPT_HONOR_MIN = "最低荣誉（0 = 全部）：";
+L.MSG_RESET = "设置已恢复默认。";
+L.MSG_USAGE = "/pla - 打开设置, /pla test - 测试提示, /pla unlock | lock - 移动提示, /pla reset - 默认设置";
+L.ANCHOR_TEXT = "拖动以移动\n（在设置中或用 /pla lock 锁定）";

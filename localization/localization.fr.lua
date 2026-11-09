@@ -1,0 +1,61 @@
+-- frFR
+local _, private = ...;
+local L = private.L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "Vous avez reçu";
+L.YOU_WON_LABEL = "Gagné!";
+L.YOU_CREATED_LABEL = "Vous créez :";
+L.YOU_EARNED_LABEL = "Obtenu :";
+L.NEW_RECIPE_LEARNED_TITLE = "Nouvelle recette apprise !";
+
+-- Options
+L.OPT_SUBTITLE = "De jolies notifications pour le butin, les jets, l'argent, les recettes et l'honneur.";
+L.OPT_COMMANDS = "Commandes";
+L.OPT_COMMANDS_HINT = "/pla - ouvrir ces options\n/pla test - afficher des notifications de test\n/pla unlock | lock - déplacer les notifications\n/pla reset - rétablir les valeurs par défaut";
+L.OPT_PAGE_DISPLAY = "Affichage et position";
+L.OPT_PAGE_TOASTS = "Notifications, effets et qualité";
+L.OPT_PAGE_ADVANCED = "Avancé";
+L.OPT_DISPLAY = "Affichage";
+L.OPT_SCALE = "Échelle";
+L.OPT_MAX_ALERTS = "Notifications max.";
+L.OPT_UPDATE_TIME = "Délai de mise à jour";
+L.OPT_SPACING = "Espacement";
+L.OPT_POSITION = "Position";
+L.OPT_UNLOCK = "Déverrouiller";
+L.OPT_LOCK = "Verrouiller";
+L.OPT_TEST = "Tester";
+L.OPT_X = "Position X";
+L.OPT_Y = "Position Y";
+L.OPT_STRATA = "Strate :";
+L.STRATA_BACKGROUND = "Arrière-plan";
+L.STRATA_LOW = "Basse";
+L.STRATA_MEDIUM = "Moyenne";
+L.STRATA_HIGH = "Haute (par défaut)";
+L.STRATA_DIALOG = "Dialogue";
+L.STRATA_FULLSCREEN = "Plein écran";
+L.STRATA_FULLSCREEN_DIALOG = "Dialogue plein écran";
+L.STRATA_TOOLTIP = "Infobulle";
+L.OPT_SHOW_FOR = "Afficher les notifications pour";
+L.OPT_LOOTING = "Butin";
+L.OPT_CRAFTING = "Artisanat";
+L.OPT_ROLLS = "Jets gagnés";
+L.OPT_MONEY = "Argent";
+L.OPT_RECIPES = "Recettes apprises";
+L.OPT_EFFECTS = "Effets";
+L.OPT_SOUNDS = "Jouer les sons";
+L.OPT_ANIMS = "Jouer les animations";
+L.OPT_QFILTER = "Filtre de qualité";
+L.OPT_EVERY_QUALITY = "Afficher toutes les qualités (sans filtre)";
+L.OPT_MIN_LOW = "Minimum sous le niveau 60";
+L.OPT_MIN_MAX = "Minimum au niveau 60";
+L.OPT_ADV_ENABLE = "Activer les options avancées (remplacent les réglages principaux)";
+L.OPT_ADV_NOTE = "Remplace Effets et Filtre de qualité par type de notification.\nLes notifications doivent rester activées dans l'onglet Notifications.";
+L.OPT_SOUND_OVERRIDE = "Remplacer la rareté du son";
+L.OPT_SOUND_FROM = "Jouer le son à partir de";
+L.OPT_QOVERRIDE = "Remplacer le filtre de qualité";
+L.OPT_MONEY_MIN = "Gain minimum à afficher (0 = tout) :";
+L.OPT_HONOR_MIN = "Honneur minimum (0 = tout) :";
+L.MSG_RESET = "Réglages réinitialisés.";
+L.MSG_USAGE = "/pla - ouvrir les options, /pla test - notifications de test, /pla unlock | lock - déplacer les notifications, /pla reset - réglages par défaut";
+L.ANCHOR_TEXT = "Glisser pour déplacer\n(Verrouillez dans les options ou avec /pla lock)";

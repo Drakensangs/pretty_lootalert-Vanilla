@@ -1,0 +1,61 @@
+-- deDE
+local _, private = ...;
+local L = private.L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "Ihr habt erhalten";
+L.YOU_WON_LABEL = "Gewonnen!";
+L.YOU_CREATED_LABEL = "Ihr stellt her:";
+L.YOU_EARNED_LABEL = "Ihr erhaltet:";
+L.NEW_RECIPE_LEARNED_TITLE = "Neues Rezept erlernt!";
+
+-- Options
+L.OPT_SUBTITLE = "Hübsche Meldungen für Beute, Würfe, Geld, Rezepte und Ehre.";
+L.OPT_COMMANDS = "Befehle";
+L.OPT_COMMANDS_HINT = "/pla - diese Optionen öffnen\n/pla test - Testmeldungen anzeigen\n/pla unlock | lock - Meldungen verschieben\n/pla reset - auf Standard zurücksetzen";
+L.OPT_PAGE_DISPLAY = "Anzeige & Position";
+L.OPT_PAGE_TOASTS = "Meldungen, Effekte & Qualität";
+L.OPT_PAGE_ADVANCED = "Erweitert";
+L.OPT_DISPLAY = "Anzeige";
+L.OPT_SCALE = "Skalierung";
+L.OPT_MAX_ALERTS = "Max. Meldungen";
+L.OPT_UPDATE_TIME = "Aktualisierungszeit";
+L.OPT_SPACING = "Abstand";
+L.OPT_POSITION = "Position";
+L.OPT_UNLOCK = "Rahmen entsperren";
+L.OPT_LOCK = "Rahmen sperren";
+L.OPT_TEST = "Testmeldungen";
+L.OPT_X = "X-Position";
+L.OPT_Y = "Y-Position";
+L.OPT_STRATA = "Ebene:";
+L.STRATA_BACKGROUND = "Hintergrund";
+L.STRATA_LOW = "Niedrig";
+L.STRATA_MEDIUM = "Mittel";
+L.STRATA_HIGH = "Hoch (Standard)";
+L.STRATA_DIALOG = "Dialog";
+L.STRATA_FULLSCREEN = "Vollbild";
+L.STRATA_FULLSCREEN_DIALOG = "Vollbild-Dialog";
+L.STRATA_TOOLTIP = "Tooltip";
+L.OPT_SHOW_FOR = "Meldungen anzeigen für";
+L.OPT_LOOTING = "Beute";
+L.OPT_CRAFTING = "Herstellung";
+L.OPT_ROLLS = "Gewonnene Würfe";
+L.OPT_MONEY = "Geld";
+L.OPT_RECIPES = "Erlernte Rezepte";
+L.OPT_EFFECTS = "Effekte";
+L.OPT_SOUNDS = "Sounds abspielen";
+L.OPT_ANIMS = "Animationen abspielen";
+L.OPT_QFILTER = "Qualitätsfilter";
+L.OPT_EVERY_QUALITY = "Jede Qualität anzeigen (kein Filter)";
+L.OPT_MIN_LOW = "Minimum unter Stufe 60";
+L.OPT_MIN_MAX = "Minimum auf Stufe 60";
+L.OPT_ADV_ENABLE = "Erweiterte Optionen aktivieren (ersetzen die Haupteinstellungen)";
+L.OPT_ADV_NOTE = "Ersetzt Effekte und Qualitätsfilter je Meldungstyp.\nMeldungen müssen weiterhin im Reiter Meldungen aktiviert sein.";
+L.OPT_SOUND_OVERRIDE = "Sound-Seltenheit überschreiben";
+L.OPT_SOUND_FROM = "Sound abspielen ab";
+L.OPT_QOVERRIDE = "Qualitätsfilter überschreiben";
+L.OPT_MONEY_MIN = "Mindestbetrag zum Anzeigen (0 = alle):";
+L.OPT_HONOR_MIN = "Mindestehre (0 = alle):";
+L.MSG_RESET = "Einstellungen zurückgesetzt.";
+L.MSG_USAGE = "/pla - Optionen öffnen, /pla test - Testmeldungen, /pla unlock | lock - Meldungen verschieben, /pla reset - Standardeinstellungen";
+L.ANCHOR_TEXT = "Zum Verschieben ziehen\n(In den Optionen oder mit /pla lock sperren)";

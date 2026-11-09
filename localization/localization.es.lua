@@ -1,0 +1,61 @@
+-- esES
+local _, private = ...;
+local L = private.L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "Has recibido";
+L.YOU_WON_LABEL = "Has ganado!";
+L.YOU_CREATED_LABEL = "Creas:";
+L.YOU_EARNED_LABEL = "Has ganado:";
+L.NEW_RECIPE_LEARNED_TITLE = "¡Nueva receta aprendida!";
+
+-- Options
+L.OPT_SUBTITLE = "Notificaciones bonitas de botín, tiradas, dinero, recetas y honor.";
+L.OPT_COMMANDS = "Comandos";
+L.OPT_COMMANDS_HINT = "/pla - abrir estas opciones\n/pla test - mostrar notificaciones de prueba\n/pla unlock | lock - mover las notificaciones\n/pla reset - restablecer valores predeterminados";
+L.OPT_PAGE_DISPLAY = "Visualización y posición";
+L.OPT_PAGE_TOASTS = "Notificaciones, efectos y calidad";
+L.OPT_PAGE_ADVANCED = "Avanzado";
+L.OPT_DISPLAY = "Visualización";
+L.OPT_SCALE = "Escala";
+L.OPT_MAX_ALERTS = "Máx. notificaciones";
+L.OPT_UPDATE_TIME = "Tiempo de actualización";
+L.OPT_SPACING = "Espaciado";
+L.OPT_POSITION = "Posición";
+L.OPT_UNLOCK = "Desbloquear marco";
+L.OPT_LOCK = "Bloquear marco";
+L.OPT_TEST = "Mostrar prueba";
+L.OPT_X = "Posición X";
+L.OPT_Y = "Posición Y";
+L.OPT_STRATA = "Capa:";
+L.STRATA_BACKGROUND = "Fondo";
+L.STRATA_LOW = "Baja";
+L.STRATA_MEDIUM = "Media";
+L.STRATA_HIGH = "Alta (predeterminada)";
+L.STRATA_DIALOG = "Diálogo";
+L.STRATA_FULLSCREEN = "Pantalla completa";
+L.STRATA_FULLSCREEN_DIALOG = "Diálogo a pantalla completa";
+L.STRATA_TOOLTIP = "Descripción emergente";
+L.OPT_SHOW_FOR = "Mostrar notificaciones de";
+L.OPT_LOOTING = "Botín";
+L.OPT_CRAFTING = "Fabricación";
+L.OPT_ROLLS = "Tiradas ganadas";
+L.OPT_MONEY = "Dinero";
+L.OPT_RECIPES = "Recetas aprendidas";
+L.OPT_EFFECTS = "Efectos";
+L.OPT_SOUNDS = "Reproducir sonidos";
+L.OPT_ANIMS = "Reproducir animaciones";
+L.OPT_QFILTER = "Filtro de calidad";
+L.OPT_EVERY_QUALITY = "Mostrar todas las calidades (sin filtro)";
+L.OPT_MIN_LOW = "Mínimo por debajo de nivel 60";
+L.OPT_MIN_MAX = "Mínimo a nivel 60";
+L.OPT_ADV_ENABLE = "Activar opciones avanzadas (reemplazan los ajustes principales)";
+L.OPT_ADV_NOTE = "Reemplaza Efectos y Filtro de calidad por tipo de notificación.\nLas notificaciones deben seguir activadas en la pestaña Notificaciones.";
+L.OPT_SOUND_OVERRIDE = "Reemplazar rareza del sonido";
+L.OPT_SOUND_FROM = "Reproducir sonido desde";
+L.OPT_QOVERRIDE = "Reemplazar filtro de calidad";
+L.OPT_MONEY_MIN = "Ganancia mínima a mostrar (0 = todo):";
+L.OPT_HONOR_MIN = "Honor mínimo (0 = todo):";
+L.MSG_RESET = "Ajustes restablecidos.";
+L.MSG_USAGE = "/pla - abrir opciones, /pla test - notificaciones de prueba, /pla unlock | lock - mover notificaciones, /pla reset - valores predeterminados";
+L.ANCHOR_TEXT = "Arrastra para mover\n(Bloquéalo en las opciones o con /pla lock)";

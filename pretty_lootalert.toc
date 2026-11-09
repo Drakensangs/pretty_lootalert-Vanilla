@@ -1,0 +1,25 @@
+## Interface: 11200
+## Title: |cff00ffff*|r |cfffff0f5pretty_lootalert|r
+## Notes: |cffcaf7faAdds toasts for looting, crafting, winning rolls, looting money, learning recipes & gaining honor.|r
+## Notes-deDE: |cffcaf7faFügt Benachrichtigungen für Plündern, Herstellen, gewonnene Würfe, Geldplündern, Rezepte lernen & Ehre erhalten hinzu.|r
+## Notes-esES: |cffcaf7faAñade avisos para saquear, fabricar, ganar tiradas, saquear dinero, aprender recetas y ganar honor.|r
+## Notes-frFR: |cffcaf7faAjoute des notifications pour le butin, l'artisanat, les jets gagnés, l'argent ramassé, l'apprentissage des recettes et l'honneur gagné.|r
+## Notes-koKR: |cffcaf7fa전리품 획득, 제작, 주사위 승리, 돈 획득, 제조법 배우기 및 명예 획득 시 알림을 표시합니다.|r
+## Notes-zhCN: |cffcaf7fa为拾取、制造、赢得掷骰、拾取金钱、学习配方和获得荣誉添加浮动提示。|r
+## Notes-zhTW: |cffcaf7fa為拾取、製作、贏得擲骰、拾取金錢、學習配方與獲得榮譽加入浮動提示。|r
+## Version: 1.0
+## Author: Original addon: s0high; Vanilla 1.12.1 version: Drakensangs
+## SavedVariables: PrettyLootAlertDB
+## LoadSavedVariablesFirst: 1
+
+utils.lua
+localization\localization.lua
+localization\localization.cn.lua    [AllowLoadTextLocale zhCN]
+localization\localization.de.lua    [AllowLoadTextLocale deDE]
+localization\localization.es.lua    [AllowLoadTextLocale esES]
+localization\localization.fr.lua    [AllowLoadTextLocale frFR]
+localization\localization.ko.lua    [AllowLoadTextLocale koKR]
+localization\localization.tw.lua    [AllowLoadTextLocale zhTW]
+petdb.lua
+core.lua
+options.lua

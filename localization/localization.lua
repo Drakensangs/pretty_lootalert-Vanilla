@@ -1,0 +1,62 @@
+-- enUS (always loaded; the other locales override it, missing keys fall back to the key name)
+local _, private = ...;
+local L = setmetatable({}, { __index = function(_, key) return key; end });
+private.L = L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "You receive";
+L.YOU_WON_LABEL = "You Won!";
+L.YOU_CREATED_LABEL = "You create:";
+L.YOU_EARNED_LABEL = "You Earned:";
+L.NEW_RECIPE_LEARNED_TITLE = "New Recipe Learned!";
+
+-- Options
+L.OPT_SUBTITLE = "Pretty toasts for loot, rolls, money, recipes and honor.";
+L.OPT_COMMANDS = "Commands";
+L.OPT_COMMANDS_HINT = "/pla - open these options\n/pla test - show test toasts\n/pla unlock | lock - move the toasts\n/pla reset - reset to defaults";
+L.OPT_PAGE_DISPLAY = "Display & Position";
+L.OPT_PAGE_TOASTS = "Toasts, Effects & Quality";
+L.OPT_PAGE_ADVANCED = "Advanced";
+L.OPT_DISPLAY = "Display";
+L.OPT_SCALE = "Scale";
+L.OPT_MAX_ALERTS = "Max alerts";
+L.OPT_UPDATE_TIME = "Update time";
+L.OPT_SPACING = "Alert spacing";
+L.OPT_POSITION = "Position";
+L.OPT_UNLOCK = "Unlock frame";
+L.OPT_LOCK = "Lock frame";
+L.OPT_TEST = "Show test toasts";
+L.OPT_X = "X position";
+L.OPT_Y = "Y position";
+L.OPT_STRATA = "Strata:";
+L.STRATA_BACKGROUND = "Background";
+L.STRATA_LOW = "Low";
+L.STRATA_MEDIUM = "Medium";
+L.STRATA_HIGH = "High (default)";
+L.STRATA_DIALOG = "Dialog";
+L.STRATA_FULLSCREEN = "Fullscreen";
+L.STRATA_FULLSCREEN_DIALOG = "Fullscreen dialog";
+L.STRATA_TOOLTIP = "Tooltip";
+L.OPT_SHOW_FOR = "Show toasts for";
+L.OPT_LOOTING = "Looting";
+L.OPT_CRAFTING = "Crafting";
+L.OPT_ROLLS = "Won rolls";
+L.OPT_MONEY = "Money";
+L.OPT_RECIPES = "Learned recipes";
+L.OPT_EFFECTS = "Effects";
+L.OPT_SOUNDS = "Play sounds";
+L.OPT_ANIMS = "Play animations";
+L.OPT_QFILTER = "Item quality filter";
+L.OPT_EVERY_QUALITY = "Show every quality (no filter)";
+L.OPT_MIN_LOW = "Minimum below level 60";
+L.OPT_MIN_MAX = "Minimum at level 60";
+L.OPT_ADV_ENABLE = "Enable Advanced options (overrides main toast settings)";
+L.OPT_ADV_NOTE = "Replaces Effects and Item quality filter per toast type.\nToasts must still be turned on in the Toasts tab.";
+L.OPT_SOUND_OVERRIDE = "Override play sound rarity";
+L.OPT_SOUND_FROM = "Play sound from";
+L.OPT_QOVERRIDE = "Override item quality filter";
+L.OPT_MONEY_MIN = "Minimum gain to show (0 = all):";
+L.OPT_HONOR_MIN = "Minimum honor (0 = all):";
+L.MSG_RESET = "Settings reset to defaults.";
+L.MSG_USAGE = "/pla - open options, /pla test - show test toasts, /pla unlock | lock - move the toasts, /pla reset - default settings";
+L.ANCHOR_TEXT = "Drag to move\n(Lock it in the options or with /pla lock)";

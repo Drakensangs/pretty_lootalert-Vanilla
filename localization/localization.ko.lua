@@ -1,0 +1,61 @@
+-- koKR
+local _, private = ...;
+local L = private.L;
+
+-- Toasts
+L.YOU_RECEIVED_LABEL = "다음을 획득했습니다.";
+L.YOU_WON_LABEL = "획득!";
+L.YOU_CREATED_LABEL = "만들었습니다:";
+L.YOU_EARNED_LABEL = "획득:";
+L.NEW_RECIPE_LEARNED_TITLE = "새로운 제조법 습득!";
+
+-- Options
+L.OPT_SUBTITLE = "전리품, 주사위, 골드, 제조법, 명예를 위한 예쁜 알림.";
+L.OPT_COMMANDS = "명령어";
+L.OPT_COMMANDS_HINT = "/pla - 이 설정 열기\n/pla test - 테스트 알림 표시\n/pla unlock | lock - 알림 이동\n/pla reset - 기본값으로 초기화";
+L.OPT_PAGE_DISPLAY = "표시 및 위치";
+L.OPT_PAGE_TOASTS = "알림, 효과 및 품질";
+L.OPT_PAGE_ADVANCED = "고급";
+L.OPT_DISPLAY = "표시";
+L.OPT_SCALE = "크기";
+L.OPT_MAX_ALERTS = "최대 알림 수";
+L.OPT_UPDATE_TIME = "갱신 시간";
+L.OPT_SPACING = "알림 간격";
+L.OPT_POSITION = "위치";
+L.OPT_UNLOCK = "프레임 잠금 해제";
+L.OPT_LOCK = "프레임 잠금";
+L.OPT_TEST = "테스트 알림";
+L.OPT_X = "X 위치";
+L.OPT_Y = "Y 위치";
+L.OPT_STRATA = "계층:";
+L.STRATA_BACKGROUND = "배경";
+L.STRATA_LOW = "낮음";
+L.STRATA_MEDIUM = "중간";
+L.STRATA_HIGH = "높음 (기본값)";
+L.STRATA_DIALOG = "대화 상자";
+L.STRATA_FULLSCREEN = "전체 화면";
+L.STRATA_FULLSCREEN_DIALOG = "전체 화면 대화 상자";
+L.STRATA_TOOLTIP = "툴팁";
+L.OPT_SHOW_FOR = "알림 표시 대상";
+L.OPT_LOOTING = "전리품";
+L.OPT_CRAFTING = "제작";
+L.OPT_ROLLS = "획득한 주사위";
+L.OPT_MONEY = "골드";
+L.OPT_RECIPES = "습득한 제조법";
+L.OPT_EFFECTS = "효과";
+L.OPT_SOUNDS = "소리 재생";
+L.OPT_ANIMS = "애니메이션 재생";
+L.OPT_QFILTER = "아이템 품질 필터";
+L.OPT_EVERY_QUALITY = "모든 품질 표시 (필터 없음)";
+L.OPT_MIN_LOW = "60레벨 미만 최소 품질";
+L.OPT_MIN_MAX = "60레벨 최소 품질";
+L.OPT_ADV_ENABLE = "고급 설정 사용 (기본 알림 설정 대체)";
+L.OPT_ADV_NOTE = "알림 종류별로 효과와 품질 필터를 대체합니다.\n알림은 여전히 알림 탭에서 켜져 있어야 합니다.";
+L.OPT_SOUND_OVERRIDE = "소리 재생 희귀도 대체";
+L.OPT_SOUND_FROM = "소리 재생 최소 품질";
+L.OPT_QOVERRIDE = "아이템 품질 필터 대체";
+L.OPT_MONEY_MIN = "표시할 최소 획득량 (0 = 전체):";
+L.OPT_HONOR_MIN = "최소 명예 (0 = 전체):";
+L.MSG_RESET = "설정이 기본값으로 초기화되었습니다.";
+L.MSG_USAGE = "/pla - 설정 열기, /pla test - 테스트 알림, /pla unlock | lock - 알림 이동, /pla reset - 기본 설정";
+L.ANCHOR_TEXT = "드래그하여 이동\n(설정 또는 /pla lock 으로 잠그기)";
