@@ -7,7 +7,7 @@
 ## Notes-koKR: |cffcaf7fa전리품 획득, 제작, 주사위 승리, 돈 획득, 제조법 배우기 및 명예 획득 시 알림을 표시합니다.|r
 ## Notes-zhCN: |cffcaf7fa为拾取、制造、赢得掷骰、拾取金钱、学习配方和获得荣誉添加浮动提示。|r
 ## Notes-zhTW: |cffcaf7fa為拾取、製作、贏得擲骰、拾取金錢、學習配方與獲得榮譽加入浮動提示。|r
-## Version: 1.0
+## Version: 1.1
 ## Author: Original addon: s0high; Vanilla 1.12.1 version: Drakensangs
 ## SavedVariables: PrettyLootAlertDB
 ## LoadSavedVariablesFirst: 1

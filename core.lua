@@ -999,22 +999,24 @@ local REGIONS = {
 		coords = {0.817383, 0.984375, 0.21875, 0.365234} },
 };
 
--- animation steps: {type, change or offsetX, duration, order, startDelay}
+-- animation steps: {type, change or offsetX, duration, startDelay}
 -- Alpha changes add to the stored alpha (1), so a 0s -1 step starts a fade-in from 0.
+-- All steps share one order; start delays sequence them. ClassicAPI files Lua-made
+-- animations in reverse when SetOrder is used, which replayed glows and sheens.
 -- The legendary burst follows the toast's 0.2s fade-in; the frame flash follows retail (0.6s).
 local GLOW_ANIMS = {
-	legendaryGlow = { {"Alpha", 1, 0.5, 1, 0.6}, {"Alpha", -1, 0.5, 2} },
-	legendaryShine = { {"Alpha", 1, 0.5, 1, 0.6}, {"Alpha", -1, 0.5, 2} },
-	legendaryRing = { {"Alpha", 1, 0.5, 1, 0.2}, {"Alpha", -1, 0.5, 2} },
-	legendaryStarglow = { {"Alpha", 1, 0.5, 1, 0.2}, {"Alpha", -1, 0.5, 2} },
-	legendaryParticles1 = { {"Alpha", 1, 0.3, 1, 0.2}, {"Alpha", -1, 0.3, 2} },
-	legendaryParticles2 = { {"Alpha", 1, 0.3, 1, 0.2}, {"Alpha", -1, 1, 2} },
-	legendaryParticles3 = { {"Alpha", 1, 0.3, 1, 0.2}, {"Alpha", -1, 0.3, 2} },
-	legendarySheen = { {"Alpha", -1, 0, 1}, {"Alpha", 1, 0.1, 2}, {"Translation", 220, 0.71, 3}, {"Alpha", -1, 0.25, 3, 0.175} },
-	glow = { {"Alpha", -1, 0, 1}, {"Alpha", 1, 0.2, 2}, {"Alpha", -1, 0.5, 3} },
-	shine = { {"Alpha", -1, 0, 1}, {"Alpha", 1, 0.1, 2}, {"Translation", 200, 0.71, 3}, {"Alpha", -1, 0.25, 3, 0.175} },
-	recipeGlow = { {"Alpha", -1, 0, 1}, {"Alpha", 1, 0.2, 2}, {"Alpha", -1, 0.5, 3} },
-	recipeShine = { {"Alpha", -1, 0.2, 1}, {"Translation", 240, 0.65, 2}, {"Alpha", -1, 0.45, 2, 0.25} },
+	legendaryGlow = { {"Alpha", 1, 0.5, 0.6}, {"Alpha", -1, 0.5, 1.1} },
+	legendaryShine = { {"Alpha", 1, 0.5, 0.6}, {"Alpha", -1, 0.5, 1.1} },
+	legendaryRing = { {"Alpha", 1, 0.5, 0.2}, {"Alpha", -1, 0.5, 0.7} },
+	legendaryStarglow = { {"Alpha", 1, 0.5, 0.2}, {"Alpha", -1, 0.5, 0.7} },
+	legendaryParticles1 = { {"Alpha", 1, 0.3, 0.2}, {"Alpha", -1, 0.3, 0.5} },
+	legendaryParticles2 = { {"Alpha", 1, 0.3, 0.2}, {"Alpha", -1, 1, 0.5} },
+	legendaryParticles3 = { {"Alpha", 1, 0.3, 0.2}, {"Alpha", -1, 0.3, 0.5} },
+	legendarySheen = { {"Alpha", -1, 0}, {"Alpha", 1, 0.1}, {"Translation", 220, 0.71, 0.1}, {"Alpha", -1, 0.25, 0.275} },
+	glow = { {"Alpha", -1, 0}, {"Alpha", 1, 0.2}, {"Alpha", -1, 0.5, 0.2} },
+	shine = { {"Alpha", -1, 0}, {"Alpha", 1, 0.1}, {"Translation", 200, 0.71, 0.1}, {"Alpha", -1, 0.25, 0.275} },
+	recipeGlow = { {"Alpha", -1, 0}, {"Alpha", 1, 0.2}, {"Alpha", -1, 0.5, 0.2} },
+	recipeShine = { {"Alpha", -1, 0.2}, {"Translation", 240, 0.65, 0.2}, {"Alpha", -1, 0.45, 0.45} },
 };
 -- these fade in from a stored alpha of 0
 local START_TRANSPARENT = {
@@ -1032,8 +1034,8 @@ local function AddAnimation(group, step)
 		anim:SetOffset(step[2], 0);
 	end
 	anim:SetDuration(step[3]);
-	anim:SetOrder(step[4]);
-	if step[5] then anim:SetStartDelay(step[5]); end
+	-- no SetOrder: new animations share order 0
+	if step[4] then anim:SetStartDelay(step[4]); end
 	return anim;
 end
 
@@ -1310,11 +1312,11 @@ CreateAlertButton = function(index)
 
 	-- fade in (the 0s step drops the stored alpha of 1 to 0), then wait and fade out
 	local animIn = button:CreateAnimationGroup();
-	AddAnimation(animIn, {"Alpha", -1, 0, 1});
-	AddAnimation(animIn, {"Alpha", 1, 0.2, 2});
+	AddAnimation(animIn, {"Alpha", -1, 0});
+	AddAnimation(animIn, {"Alpha", 1, 0.2});
 	animIn:SetScript("OnFinished", AnimIn_OnFinished);
 	local waitAndAnimOut = button:CreateAnimationGroup();
-	button.fadeOut = AddAnimation(waitAndAnimOut, {"Alpha", -1, 1.5, 1, FADE_OUT_DELAY});
+	button.fadeOut = AddAnimation(waitAndAnimOut, {"Alpha", -1, 1.5, FADE_OUT_DELAY});
 	waitAndAnimOut:SetScript("OnFinished", HideRegion);
 	button.animIn = animIn;
 	button.waitAndAnimOut = waitAndAnimOut;
